@@ -7,7 +7,9 @@
   
 }
 
-
+body {
+  background: black;
+}
 
 /* pieces are div within game table cells: draw as colored circles */
 
@@ -16,7 +18,7 @@
   margin: 5px;
   width: 80%;
   height: 80%;
-  border-radius: 20px;
+  border-radius: 30px;
   
 }
 
@@ -28,14 +30,16 @@
  transition: ease-in-out;
 
 }
+
 @keyframes dropIn {
   from{
    margin-top: -100%;
-   heigth: 300%;
+
   }
+  
   to {
     margin-top: 0;
-    height: 100%;
+    
   }
 }
 .piece.p2 {
@@ -47,36 +51,54 @@
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border: dashed 1px white;
+
 }
 
 #column-top td:hover {
   background-color: yellow;
-}
 
-
-#leftLeg {
-  position: absolute;
-  top: 324px;
-  height : 100px;
-  width: 30px;
-  background: blue;
- left: 10px;
-}
-
-#rightLeg {
-  position: absolute;
-  top: 324px;
-  left:457px;
-  height : 100px;
-  width: 30px;
-  background: blue;
-  
 }
 
 #game {
-  left: 37px;
-  position: absolute;
-  
+  display:flex;
+  flex-direction: row;
+ flex-wrap: wrap;
+ margin-top: 20px;
+
 }
+
+#rules {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+}
+
+img {
+  height: 50%;
+  width: 50%;
+ 
+}
+
+span {
+  font-size: 5em;
+ margin: 0;
+ padding: 0;
+ text-shadow: 0px 0px 3px white;
+ color: white;
+
+}
+
+ul{
+margin-bottom: 10px;
+color: white;
+
+}
+
+#count {
+  margin-left: 110px;
+
+}
+
 
