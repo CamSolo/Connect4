@@ -23,7 +23,7 @@ body {
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
-.piece, .p1 {
+ .p1 {
   background-color: red;
  animation-duration: .1s;
   animation-name: dropIn;
@@ -42,8 +42,8 @@ body {
     
   }
 }
-.piece.p2 {
-  background: black;
+.p2 {
+  background:white;
   animation-duration: .1s;
   animation-name: dropIn;
 
@@ -85,7 +85,7 @@ span {
   font-size: 5em;
  margin: 0;
  padding: 0;
- text-shadow: 0px 0px 3px white;
+ 
  color: white;
 
 }

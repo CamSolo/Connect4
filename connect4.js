@@ -168,7 +168,7 @@ setInterval(() => {
   }
   dropCount.textContent= count 
   if (count % 2 === 0){
-    dropCount.style.color = 'black';
+    dropCount.style.color = 'white';
     
   }
   else{
