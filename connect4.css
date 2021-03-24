@@ -9,6 +9,9 @@
 
 body {
   background: black;
+  position: relative;
+  display: grid;
+  
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -18,7 +21,7 @@ body {
   margin: 5px;
   width: 80%;
   height: 80%;
-  border-radius: 30px;
+  border-radius: 50px;
   
 }
 
@@ -65,6 +68,13 @@ body {
   flex-direction: row;
  flex-wrap: wrap;
  margin-top: 20px;
+ 
+}
+
+#board {
+  width: 40vw;
+  height: 80vh;
+  min-width: 450px;
 
 }
 
@@ -72,33 +82,28 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  position: relative;
 
 }
 
-img {
-  height: 50%;
-  width: 50%;
- 
-}
-
-span {
+#connect {
   font-size: 5em;
- margin: 0;
- padding: 0;
- 
+ position: absolute;
  color: white;
+top: 0;
+left: 70px;
 
 }
 
 ul{
 margin-bottom: 10px;
+font-size: 20px;
 color: white;
 
 }
 
-#count {
-  margin-left: 110px;
-
+img {
+  margin-top: 20px;
 }
 
 

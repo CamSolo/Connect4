@@ -157,31 +157,6 @@ function checkForWin() {
   }
 }
 
-const dropCount = document.getElementById("count")
-let count = 0;
-setInterval(() => {
-  if (count <= 4){
-    count ++
-  }
-  if (count > 4){
-    count = 1;
-  }
-  dropCount.textContent= count 
-  if (count % 2 === 0){
-    dropCount.style.color = 'white';
-    
-  }
-  else{
-    dropCount.style.color = "red"
-  }
-  if (count === 4){
-    dropCount.textContent= count + "!"
-  }
-}, 1500)
- 
-
- 
-
 makeBoard();
 makeHtmlBoard();
 
