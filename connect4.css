@@ -72,10 +72,16 @@ body {
 }
 
 #board {
-  width: 40vw;
-  height: 80vh;
-  min-width: 450px;
+  width: 800px;
+  height: 800px;
+ }
 
+@media screen and (max-width: 700px) {
+  #board{
+    margin-top: 7em;
+  width: 60em;
+  height: 60em;
+  }
 }
 
 #rules {
